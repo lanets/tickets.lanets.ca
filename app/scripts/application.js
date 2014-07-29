@@ -1,12 +1,16 @@
 define([
     'backbone',
-    'communicator'
+    'communicator',
+    'modules/header/main'
 ],
 
-function( Backbone, Communicator ) {
+function( Backbone, Communicator, HeaderModule ) {
     'use strict';
 
     var App = new Backbone.Marionette.Application();
+
+    // Modules initialization
+    App.module('Header', HeaderModule);
 
     /* Add application regions here */
     App.addRegions({
