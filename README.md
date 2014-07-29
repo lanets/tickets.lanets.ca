@@ -20,11 +20,15 @@ Récupérez la dernière version du repo
   
     $ git clone git@github.com:lanets/tickets.lanets.ca.git
     
-Déplacez-vous dans le projet et récupérez les dépendances du projet
+Déplacez-vous dans le projet et récupérez les dépendances des outils de développement Grunt et du serveur Express
   
     $ cd tickets.lanets.ca
+    $ npm install
+    
+Récupérez, ensuite, les dépendences du projet avec Bower, telles les librairies Backbone, Marionette, jQuery, Underscore et etc
+
     $ bower install
- 
+
 ## Utilisation
  
     $ grunt
