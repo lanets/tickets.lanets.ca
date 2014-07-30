@@ -1,6 +1,12 @@
 @import 'sass-bootstrap/lib/bootstrap';
 
-.hero-unit {
-    margin: 50px auto 0 auto;
-    width: 400px;
-}
+// Partials
+@import 'partials/base';
+@import 'partials/colors';
+@import 'partials/buttons';
+@import 'partials/images';
+@import 'partials/typography';
+
+// Modules
+@import 'modules/layout';
+@import 'modules/header';

@@ -1,0 +1,17 @@
+$bg-color: $pumpkin;
+$bg-color-hover: $pumpkin-light;
+$border-color: $pumpkin;
+$border-color-hover: $pumpkin-light;
+$text-color: $white;
+
+.btn-default {
+    background-color: $bg-color;
+    border-color: $border-color;
+    color: $text-color !important;
+    font-weight: $thin;
+
+    &:hover {
+        background-color: $bg-color-hover !important;
+        border-color: $border-color-hover !important;
+    }
+}
