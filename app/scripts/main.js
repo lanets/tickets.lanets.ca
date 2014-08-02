@@ -1,10 +1,16 @@
 require([
-	'backbone',
-	'application',
-	'regionManager'
+    'backbone',
+    'application',
+    'regionManager',
+    'controller',
+    'router'
 ],
-function ( Backbone, App ) {
+function ( Backbone, App, RegionManager, Controller, Router ) {
     'use strict';
 
-	App.start();
+    App.appRouter = new Router({
+        controller: new Controller()
+    });
+
+    App.start();
 });
