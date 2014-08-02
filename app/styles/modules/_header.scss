@@ -4,11 +4,13 @@ $text-color-hover: $pumpkin;
 .navbar {
     border-radius: 0px;
     color: $text-color;
+    font-family: 'Helvetica Neue', helvetica, arial, sans-serif;
+    margin-bottom: 0px;
 
     &.navbar-default {
         background-color: #ffffff;
         border: 0px;
-        border-bottom: 2px solid #d0d0d0;
+        border-bottom: 1px solid #d0d0d0;
         padding: 5px;
     }
 

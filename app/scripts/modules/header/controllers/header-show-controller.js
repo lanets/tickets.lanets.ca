@@ -8,9 +8,7 @@ define([
 function(_, Backbone, Marionette, HeaderView) {
   return HeaderShowController = Marionette.Controller.extend({
     showHeader: function() {
-      this.app.headerRegion.show(new HeaderView({
-          text: 'Contacts'
-      }));
+      this.app.headerRegion.show(new HeaderView());
     }
   });
 });

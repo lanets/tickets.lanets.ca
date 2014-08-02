@@ -1,12 +1,15 @@
 @import 'sass-bootstrap/lib/bootstrap';
+@import 'compass';
 
 // Partials
 @import 'partials/base';
 @import 'partials/colors';
+@import 'partials/typography';
 @import 'partials/buttons';
 @import 'partials/images';
-@import 'partials/typography';
 
 // Modules
 @import 'modules/layout';
 @import 'modules/header';
+@import 'modules/footer';
+@import 'modules/tickets-selection';

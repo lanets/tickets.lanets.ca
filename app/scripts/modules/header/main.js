@@ -7,29 +7,20 @@ define([
 ],
 
 function(_, Backbone, Marionette, HeaderShowController, HeaderView) {
-  var Router = Marionette.AppRouter.extend({
-    appRoutes: {
-      '': 'showHeader'
-    }
-  });
-
   return HeaderModule = Marionette.Module.extend({
     startWithParent: true,
 
     initialize: function() {
-
-    },
-
-    showHeader: function() {
-      this.app.headerRegion.show(new HeaderView({
-          text: 'Contacts'
-      }));
+      this.controller = new HeaderShowController();
+      this.controller.app = this.app;
     },
 
     onStart: function() {
-      new Router({
-        controller: this
-      });
+      this.showHeader();
+    },
+
+    showHeader: function() {
+      this.controller.showHeader();
     }
   });
 });
