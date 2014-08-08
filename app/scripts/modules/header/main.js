@@ -2,8 +2,7 @@ define([
   'underscore',
   'backbone',
   'backbone.marionette',
-  'modules/header/controllers/header-show-controller',
-  'modules/header/views/header-show-view'
+  'modules/header/controllers/header-show-controller'
 ],
 
 function(_, Backbone, Marionette, HeaderShowController, HeaderView) {
