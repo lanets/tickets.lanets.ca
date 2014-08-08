@@ -2,8 +2,7 @@ define([
   'underscore',
   'backbone',
   'backbone.marionette',
-  'modules/footer/controllers/footer-show-controller',
-  'modules/footer/views/footer-show-view'
+  'modules/footer/controllers/footer-show-controller'
 ],
 
 function(_, Backbone, Marionette, FooterShowController, FooterView) {
