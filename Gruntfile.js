@@ -45,7 +45,7 @@ module.exports = function (grunt) {
 
                     'test/spec/{,**/}*.js'
                 ],
-                tasks: ['exec'],
+                //tasks: ['exec'],
                 options: {
                     livereload: true
                 }
@@ -297,7 +297,6 @@ module.exports = function (grunt) {
             'compass:server',
             'connect:testserver',
             'express:dev',
-            'exec',
             'open',
             'watch'
         ]);
