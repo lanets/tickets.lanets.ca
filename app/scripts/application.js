@@ -2,7 +2,8 @@ define([
     'backbone',
     'communicator',
     'modules/header/main',
-    'modules/footer/main'
+    'modules/footer/main',
+    'modules/transaction/main'
 ],
 
 function( Backbone, Communicator, HeaderModule, FooterModule ) {
@@ -13,6 +14,7 @@ function( Backbone, Communicator, HeaderModule, FooterModule ) {
     // Modules initialization
     App.module('Header', HeaderModule);
     App.module('Footer', FooterModule);
+    App.module('Transaction', TransactionModule);
 
     /* Add application regions here */
     App.addRegions({
